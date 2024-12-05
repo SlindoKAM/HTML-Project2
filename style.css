@@ -1,15 +1,37 @@
 body{
     background-color: #232830;
+    margin: 0;
 }
 
 .navbar{
-    background-color: #232830;
+    background-color: white;
+    padding: 1em;
 
-    a{
+    .logo{
         text-decoration: none;
-        color: #fff;
+        font-weight: bold;
+        color: black;
+        font-size: 1.5rem;
+
+        span{
+            color: #0077ff;
+        }
+    }
+
+    /* a{
+        text-decoration: none;
+        color: black;
         font-size: 1.5rem;
         font-weight: 500;
+    } */
+    
+    .menu-page{
+        display: flex;
+
+    }
+
+    nav{
+        display: none;
     }
 
     .container{
@@ -17,4 +39,8 @@ body{
         justify-content: space-between;
         align-items: center;
     }
+}
+
+ul{
+    list-style-type: none;
 }
