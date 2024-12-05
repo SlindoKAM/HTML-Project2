@@ -1,12 +1,14 @@
-html{
-    font-size: 22px;
-}
 body{
     background-color: #232830;
 }
-h1{
-    color: #FFFFFF;
-}
-h2{
-    color: #FFFFFF;
+
+.navbar{
+    background-color: #232830;
+
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
 }
