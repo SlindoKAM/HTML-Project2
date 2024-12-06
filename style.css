@@ -95,9 +95,16 @@ section{
             text-decoration: none;
             padding: 9.6px 20.8px;
             font-size: 22.4px;
-            /* font-family: 'Poppins';
-            font-weight: bold; */
+            display: inline-block;
+            font-weight: bold;
             border-radius: 80px;
+        }
+
+        .watch-video-cta{
+            display: block;
+            align-items: center;
+            margin-top: 16px;
+            font-size: 32px;
         }
     }
 }
