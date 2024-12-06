@@ -64,7 +64,7 @@ section{
     padding: 80px 32px;
 }
 
-.hero{
+section.hero{
     text-align: center;
 
     .left-col{
@@ -104,7 +104,59 @@ section{
             display: block;
             align-items: center;
             margin-top: 16px;
-            font-size: 32px;
+            font-size: 24px;
+
+            img{
+                margin-right: 12px;
+            }
         }
+    }
+
+    .hero-image{
+        width: 50%;
+        margin-top: 80px;
+    }
+}
+
+section.first-features-section{
+
+    ul.category-list{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+
+        /* .first-grid-page{
+            
+        } */
+    }
+    
+}
+
+section.second-feature-section{
+    background: rgb(84, 78, 78);
+    color: whitesmoke;
+}
+
+ul.features-list{
+    margin: 0;
+    padding-left: 1.6px;
+    /* display: grid; get back to this */
+
+    li{
+        font-size: 17.6px;
+        margin-bottom: 16px;
+        margin-left: 32px;
+        position: relative;
+    }
+    
+    li::before{
+        content: '';
+        left: -32px;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-image: url('../HTML-Project2/images/done-icon.svg');
+        background-size: contain;
+        margin-right: 8px;
     }
 }
