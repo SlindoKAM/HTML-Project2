@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Recursive:wght@300..1000&display=swap');
+
+:root{
+    --primary-color: #0077ff;
+}
+
 body{
     background-color: #232830;
     margin: 0;
@@ -5,16 +12,18 @@ body{
 
 .navbar{
     background-color: white;
-    padding: 1em;
+    padding: 16px;
+    font-family: 'Poppins';
 
     .logo{
         text-decoration: none;
         font-weight: bold;
         color: black;
-        font-size: 1.5rem;
+        font-size: 24px;
+        font-family: 'Poppins';
 
         span{
-            color: #0077ff;
+            color: var(--primary-color);
         }
     }
 
@@ -49,4 +58,46 @@ ul{
 
 a{
     color: violet;
+}
+
+section{
+    padding: 80px 32px;
+}
+
+.hero{
+    text-align: center;
+
+    .left-col{
+
+        .heading{
+            font-family: 'Recursive';
+            font-size: 71px;
+            line-height: 85.2px;
+            font-style: italic;
+            font-weight: 400;
+            color: #FF7575;
+        }
+
+        .sub-heading{
+            color: whitesmoke;
+            text-transform: uppercase;
+            font-family: 'Poppins';
+            font-weight: bold;
+            font-weight: 400;
+            letter-spacing: 4.8px;
+            font-size: 29px;
+            line-height: 43.5px;
+        }
+
+        .first-cta{
+            background: var(--primary-color);
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 9.6px 20.8px;
+            font-size: 22.4px;
+            /* font-family: 'Poppins';
+            font-weight: bold; */
+            border-radius: 80px;
+        }
+    }
 }
