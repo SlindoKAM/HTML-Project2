@@ -132,12 +132,12 @@ section.first-features-section{
     
 }
 
-section.second-feature-section{
+section.second-features-section{
     background: rgb(84, 78, 78);
     color: whitesmoke;
 }
 
-ul.feature-list{
+ul.features-list{
     margin: 0;
     padding-left: 1.6px;
     /* display: grid; get back to this */ 
