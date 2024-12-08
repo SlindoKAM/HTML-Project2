@@ -137,10 +137,10 @@ section.second-feature-section{
     color: whitesmoke;
 }
 
-ul.features-list{
+ul.feature-list{
     margin: 0;
     padding-left: 1.6px;
-    /* display: grid; get back to this */
+    /* display: grid; get back to this */ 
 
     li{
         font-size: 17.6px;
@@ -155,8 +155,9 @@ ul.features-list{
         position: absolute;
         width: 20px;
         height: 20px;
-        background-image: url('../HTML-Project2/images/done-icon.svg');
+        background-image: url('images/done-icon.svg');
         background-size: contain;
         margin-right: 8px;
     }
 }
+
