@@ -40,7 +40,7 @@ body{
     }
 
     nav{
-        /* display: none; */
+        display: none;
     }
 
     .container{
@@ -191,6 +191,44 @@ section.testimonials-section{
     }
 }
 
+section.articles-section{
+    background: green;
+    color: white;
+
+    li{
+        background: lightgreen;
+        text-align: center;
+        padding: 32px 16px;
+        border-radius: 16px;
+        /* margin-bottom: 16px; */
+        width: 80%;
+        margin: 0 auto 16px auto;
+
+
+        img{
+            width: 800px;
+            height: 300px;
+            border-radius: 32px;
+        }
+
+        /* .h2{
+            font-size: 80px;
+            text-transform: uppercase;
+        }
+
+        cite{
+            display: flex;
+            justify-content: center;
+        }
+
+        span{
+            display: flex;
+            place-content: space-between;
+        } */
+
+    }
+}
+
 
 .h3{
     font-size: 32px;
@@ -272,4 +310,20 @@ nav{
     float: right;
     margin: 80px;
     cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .menu-page, .exit-page{
+        display: none;
+    }
+
+    .navbar{
+        display: grid;
+    }
+
+    .navbar nav{
+        display: flex;
+    }
+
 }
