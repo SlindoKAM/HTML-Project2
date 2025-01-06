@@ -113,18 +113,18 @@ section.hero{
     }
 
     .hero-image{
-        width: 50%;
+        width: 30%;
         margin-top: 80px;
     }
 }
 
 section.first-features-section{
+    background: red;
 
     ul.category-list{
         display: flex;
         flex-direction: row;
         gap: 16px;
-
     }
     
 }
@@ -143,7 +143,8 @@ section.second-features-section{
 ul.features-list{
     margin: 0;
     padding-left: 1.6px;
-    /* display: grid; get back to this */ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
     li{
         font-size: 17.6px;
@@ -206,7 +207,7 @@ section.articles-section{
 
 
         img{
-            width: 800px;
+            width: 100%;
             height: 300px;
             border-radius: 32px;
         }
@@ -310,6 +311,16 @@ nav{
     }
 }
 
+section.page-number{
+
+    background: blue;
+    
+    ul{
+        display: flex;
+        place-content: space-between;
+    }
+}
+
 .exit-page{
     float: right;
     margin: 80px;
@@ -322,12 +333,200 @@ nav{
         display: none;
     }
 
-    .navbar{
+    .navbar .container{
         display: grid;
+        grid-template-columns: 180px auto;
     }
 
     .navbar nav{
         display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        padding: 0;
+        width: 100%;
+
+        ul{
+            display: flex;
+
+            a{
+                color: black;
+                font-size: 16px;
+                padding: 1.6px 16px;
+            }
+
+            a:hover{
+                background: var(--primary-color);
+                color: white;
+                border-radius: 80px;
+            }
+
+        }
+
+        ul.first-nav{
+            margin-top: 0;
+            /* padding: 16px 16px;
+            align-content: center;
+            justify-items: center; */
+            text-align: left;
+        }
+
+        ul.second-nav{
+            margin-top: 0;
+        }
+
+        li.current-page a{
+            font-weight: bold;
+        }
+
+        li.page-to-other a{
+            color: var(--primary-color);
+            border: 3px solid var(--primary-color);
+            border-radius: 80px;
+            font-weight: bold;
+            margin-top: -3.2px;
+        }
+
+        li.page-to-other a:hover{
+            background: var(--primary-color);
+            color: white;
+        }
+
+
     }
 
+}
+
+@media only screen and (min-width: 1080px){
+    .container{
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    section{
+        padding: 160px 64px;
+    }
+
+    .hero .container{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        .left-col{
+            margin: 48px 48px 0 80px;
+            
+            h1{
+                font-size: 48px;
+                width: 90%;
+                line-height: 96px;
+                margin: 0;
+            }
+        }
+    }
+
+    .hero-image{
+        width: 50%;
+        margin-top: 80px;
+    }
+
+    .hero-to-catch{
+        display:  flex;
+    }
+
+    .first-cta{
+        margin-right: 16px;
+    }
+
+    ul.features-list{
+        display: block;
+        margin-left: 80px;
+
+        li{
+            font-size: 22.4px;
+        }
+
+        li::before{
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    section.second-features-section{
+        position: relative;
+
+        img{
+            display: block;
+            position: absolute;
+            right: 16px;
+            bottom: -48px;
+        }
+    }
+}
+
+section.testimonials-section{
+
+    ul{
+        display: flex;
+        
+        li{
+            margin:  0 16px;
+        }
+    }
+
+}
+
+section.articles-section{
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    li{
+        flex: 1 1 calc(25% - 16px);
+        margin: 16px 16px;
+    }
+}
+
+.contact-section{
+    position: relative;
+
+    .container{
+        display: flex;
+    }
+}
+
+.contact-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80%;
+    width: 40%;
+
+    iframe{
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1050px){
+    .second-features-section::before{
+        content: '';
+        position: absolute;
+        width: 10%;
+        height: 320px;
+        background: var(--primary-color);
+        left: 0;
+        top: -64px;
+    }
+
+    .second-features-section::after{
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 160px;
+        background: url('images/apps-grid-icon.svg') no-repeat;
+        left: 32px;
+        top: 16px;
+    }
 }
